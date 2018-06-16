@@ -1,2 +1,3 @@
-# terraform-boilerplate
+# Terraform boilerplate
+
 Boilerplate repo for terraform projects.

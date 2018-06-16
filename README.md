@@ -7,8 +7,15 @@ Boilerplate repo for terraform projects.
 
 ## Tools to configure:
 * Configure `CircleCi` at https://circleci.com
-* Install `terraform-docs` locally.
-* Configure pre-commit-hook. Before every commit the hook will properly format your tf files and also regenerate README.md using `terraform-docs`
+* Install `terraform-docs` locally. You can manually run it by:
+```
+terraform-docs md . > README.md
+```
+* Configure [pre-commit](https://pre-commit.com/) hook. Before every commit the hook will properly format your tf files and also regenerate README.md using `terraform-docs`.
+```
+brew install pre-commit
+pre-commit install # In project folder
+```
 
 ## Best practices
 * Use `kebab-case` to separate words. Do not use `PascalCase`, `camelCase`, `snake_case` or any other casing approach.
